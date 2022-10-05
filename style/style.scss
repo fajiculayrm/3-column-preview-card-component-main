@@ -1,0 +1,112 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 5rem;
+    width: min(90%, 20.3125rem);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    color: $secondary;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 48rem) {
+        margin: 0;
+        flex-direction: row;
+        width: min(90%, 57.1825rem);
+    }
+}
+
+div {
+    padding: 3.2rem;
+    @media (min-width: 48rem) {
+        padding: 2rem;
+    }
+}
+
+img {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: $sub-font;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+p,
+button {
+    font-family: $main-font;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+.sedans {
+    background-color: $highlight1;
+}
+
+.sedans button {
+    color: $highlight1;
+    &:hover {
+        background-color: $highlight1;
+        color: $secondary;
+        border-color: $secondary;
+    }
+}
+
+.suvs {
+    background-color: $highlight2;
+}
+
+.suvs button {
+    color: $highlight2;
+    &:hover {
+        background-color: $highlight2;
+        color: $secondary;
+        border-color: $secondary;
+    }
+}
+
+.luxury {
+    background-color: $highlight3;
+}
+
+.luxury button {
+    color: $highlight3;
+    &:hover {
+        background-color: $highlight3;
+        color: $secondary;
+        border-color: $secondary;
+    }
+}
+
+button {
+    background-color: $secondary;
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: 1px solid $secondary;
+    transition: 0.3s;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
