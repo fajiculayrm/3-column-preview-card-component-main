@@ -16,7 +16,7 @@ body {
 
 main {
     margin-top: 5rem;
-    width: min(90%, 20.3125rem);
+    width: min(90%, 100%);
     border-radius: 0.5rem;
     overflow: hidden;
     color: $secondary;
@@ -29,7 +29,7 @@ main {
     }
 }
 
-div {
+.card {
     padding: 3.2rem;
     @media (min-width: 48rem) {
         padding: 2rem;
