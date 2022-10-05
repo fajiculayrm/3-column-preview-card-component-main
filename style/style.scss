@@ -51,6 +51,9 @@ button {
     font-family: $main-font;
     font-size: 0.9375rem;
     line-height: 1.5rem;
+    @media (min-width: 48rem) {
+        font-size: 1rem;
+    }
 }
 
 .sedans {
@@ -101,6 +104,9 @@ button {
     cursor: pointer;
     border: 1px solid $secondary;
     transition: 0.3s;
+    @media (min-width: 48rem) {
+        margin-top: 4rem;
+    }
 }
 
 .attribution {

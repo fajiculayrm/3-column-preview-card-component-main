@@ -55,6 +55,12 @@ button {
   font-size: 0.9375rem;
   line-height: 1.5rem;
 }
+@media (min-width: 48rem) {
+  p,
+button {
+    font-size: 1rem;
+  }
+}
 
 .sedans {
   background-color: hsl(31deg, 77%, 52%);
@@ -104,6 +110,11 @@ button {
   cursor: pointer;
   border: 1px solid hsl(0deg, 0%, 95%);
   transition: 0.3s;
+}
+@media (min-width: 48rem) {
+  button {
+    margin-top: 4rem;
+  }
 }
 
 .attribution {
