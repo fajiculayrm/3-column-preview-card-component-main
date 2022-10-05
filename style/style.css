@@ -43,22 +43,40 @@ img {
   margin-bottom: 2rem;
 }
 
-h1 {
+h2 {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 p,
-button {
+.learn-more {
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.9375rem;
   line-height: 1.5rem;
 }
 @media (min-width: 48rem) {
   p,
-button {
+.learn-more {
     font-size: 1rem;
+  }
+}
+
+.learn-more {
+  display: inline-block;
+  text-decoration: none;
+  background-color: hsl(0deg, 0%, 95%);
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid hsl(0deg, 0%, 95%);
+  transition: 0.3s;
+  margin-top: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .learn-more {
+    margin-top: 4rem;
   }
 }
 
@@ -66,10 +84,10 @@ button {
   background-color: hsl(31deg, 77%, 52%);
 }
 
-.sedans button {
+.sedans .learn-more {
   color: hsl(31deg, 77%, 52%);
 }
-.sedans button:hover {
+.sedans .learn-more:hover {
   background-color: hsl(31deg, 77%, 52%);
   color: hsl(0deg, 0%, 95%);
   border-color: hsl(0deg, 0%, 95%);
@@ -79,10 +97,10 @@ button {
   background-color: hsl(184deg, 100%, 22%);
 }
 
-.suvs button {
+.suvs .learn-more {
   color: hsl(184deg, 100%, 22%);
 }
-.suvs button:hover {
+.suvs .learn-more:hover {
   background-color: hsl(184deg, 100%, 22%);
   color: hsl(0deg, 0%, 95%);
   border-color: hsl(0deg, 0%, 95%);
@@ -92,29 +110,13 @@ button {
   background-color: hsl(179deg, 100%, 13%);
 }
 
-.luxury button {
+.luxury .learn-more {
   color: hsl(179deg, 100%, 13%);
 }
-.luxury button:hover {
+.luxury .learn-more:hover {
   background-color: hsl(179deg, 100%, 13%);
   color: hsl(0deg, 0%, 95%);
   border-color: hsl(0deg, 0%, 95%);
-}
-
-button {
-  background-color: hsl(0deg, 0%, 95%);
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  margin-top: 1.5rem;
-  cursor: pointer;
-  border: 1px solid hsl(0deg, 0%, 95%);
-  transition: 0.3s;
-}
-@media (min-width: 48rem) {
-  button {
-    margin-top: 4rem;
-  }
 }
 
 .attribution {

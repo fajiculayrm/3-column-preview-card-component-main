@@ -40,14 +40,14 @@ img {
     margin-bottom: 2rem;
 }
 
-h1 {
+h2 {
     font-family: $sub-font;
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
 p,
-button {
+.learn-more {
     font-family: $main-font;
     font-size: 0.9375rem;
     line-height: 1.5rem;
@@ -56,11 +56,27 @@ button {
     }
 }
 
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $secondary;
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 1px solid $secondary;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+    @media (min-width: 48rem) {
+        margin-top: 4rem;
+    }
+}
+
 .sedans {
     background-color: $highlight1;
 }
 
-.sedans button {
+.sedans .learn-more {
     color: $highlight1;
     &:hover {
         background-color: $highlight1;
@@ -73,7 +89,7 @@ button {
     background-color: $highlight2;
 }
 
-.suvs button {
+.suvs .learn-more {
     color: $highlight2;
     &:hover {
         background-color: $highlight2;
@@ -86,26 +102,12 @@ button {
     background-color: $highlight3;
 }
 
-.luxury button {
+.luxury .learn-more {
     color: $highlight3;
     &:hover {
         background-color: $highlight3;
         color: $secondary;
         border-color: $secondary;
-    }
-}
-
-button {
-    background-color: $secondary;
-    border: 0;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    margin-top: 1.5rem;
-    cursor: pointer;
-    border: 1px solid $secondary;
-    transition: 0.3s;
-    @media (min-width: 48rem) {
-        margin-top: 4rem;
     }
 }
 
